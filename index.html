@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+    <title> biking is good </title>
+    <link rel="stylesheet" type="text/css" href="css/microsite.css">
+  <link rel="shortcut icon" type="image/png" href="../microsite/images/favicon.png">
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+
+ <header id=main-header>
+
+    <img id="logo" src="images/logo.png" alt="logo" onclick="opennav()">
+
+    <nav id="navbar" class="overlay">
+    <a class="closebtn" onclick="closenav()">&times;</a>
+    <div class="overlay-content">
+    <a href="index.html" target="_blank">Home</a>
+    <a href="Movie.html" target="_blank">Movie</a>
+    <a href="About.html" target="_blank">About</a>
+    </div>
+    </nav>
+
+
+     </header>
+
+
+
+       <div class="title">
+           <h1>BIKING</h1>
+           <h2>copenhagen</h2>
+
+        </div>
+
+
+
+
+    <nav class="navbar">
+     <div class="overlay">
+     <div  class="overlay-content">
+            <a href="index.html"> home </a>
+            <a href="Movie.html"> Movie </a>
+            <a href="About.html"> About  </a>
+ </div>
+    <a class="close-button"  onclick="closenav()"> &times; </a>
+ </div>
+</nav>
+
+<script>
+function  opennav(){
+document.getElementById ("navbar").style.width ="100%";}
+
+
+
+function closenav() {
+document.getElementById ("navbar").style.width ="0%";}
+
+
+
+
+
+
+</script>
+
+<main>
+                <div class="container">
+                    <img  class="map" src="images/Bike%20map@0,75x.png" alt="the image of a map" class="image1">
+                    <div class="middle">
+                       <a href="Movie.html" class="linkover"> <div class="overmap">FOLLOW THE MAP </div></a>
+                    </div>
+                </div>
+
+            </main>
+
+
+
+
+
+
+</div>
+<footer>
+      <p>bike copyright &copy; 2018</p>
+    </footer>
+</body>
+
+</html>

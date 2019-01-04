@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+:root {
+  --primary: #ddd;
+  --dark: #333;
+  --light: #fff;
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+.wrapper{
+    display: grid;
+    grid-gap: 10px;
+
+}
+body {
+    background: #000;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    color: #545454;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 2.5;
+    margin: 0 auto;
+    max-width:auto;
+    padding: 2em 2em 5em;
+}
+
+h1, h2 {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Poppins', sans-serif;
+
+}
+h2 {
+    margin-top: -1.6em;
+    text-align: center;
+    color: greenyellow;
+    font-size: 3em;
+    font-family: RidemyBike Pro;
+
+
+}
+
+
+@font-face {
+font-family: RidemyBike Pro;
+src: url(../fonts/RidemyBike.otf);
+}
+
+/*
+* {
+    font-family: RidemyBike Pro;
+}
+
+*/
+
+
+#logo {
+      width: 5em;
+       margin: auto;
+    display: left;
+          }
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: dimgrey;
+    opacity: 0.95;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    text-align: top;
+    margin-top: 2em;
+    font-size: 2em;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.overlay a {
+    padding: 0.7em;
+    text-decoration: none;
+    font-size: 1.7em;
+    color:greenyellow;
+    display: block;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.overlay  a:hover{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+}
+
+.closebtn {
+    color: #fff;
+    position: absolute;
+    right: 0.5em;
+    cursor:pointer;
+}
+.map {
+     display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+
+
+#home {
+position:absolute;
+bottom:0.1px;
+left:500px;
+font-size: 3em;
+color: orange;
+}
+
+/*second page*/
+
+header{
+    grid-column: 1fr;
+}
+.container {
+    position: relative;
+}
+
+.image1 {
+    opacity: 1;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    margin-top: 20px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+.overmap{
+    background-color: black;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.7em;
+    text-decoration: none;
+
+}
+
+}
+.title{
+    grid-column: 1fr;
+}
+
+.video{
+    grid-column: 1fr;
+
+
+}
+
+.videowrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0px;
+}
+.videowrapper iframe {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 100%;
+    width: 100%;
+
+}
+.boxes {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr) );
+    font-family: 'Poppins', sans-serif;
+
+}
+.box {
+    background: white;
+    text-align: center;
+    color: green;
+   padding: 2.5rem;
+    box-shadow: var(--shadow);
+    font-size: 1em;
+}
+.box h2 {
+    font-family: RidemyBike Pro;
+    color: black;
+}
+.box .moto {
+    color: black;
+    font-size: 0.4em;
+}
+.moto:hover{
+    font-size: 1em;
+    color: coral;
+}
+@media (min-width: 700px) {
+  body {
+    grid-template-areas:
+      'showcase';
+background-color:#140000;
+  }
+    h3{
+        font-size: 1.5em;
+        color: darkgrey;
+    }
+}
+@media (min-width: 1200px) {
+  body {
+    grid-template-areas:
+      'showcase';
+background-color:black;
+  }
+      h3{
+        font-size: 1.7em;
+        color: white;
+    }
+    .overmap{
+  background-color: black;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5em;
+  text-decoration: none;
+  padding: 16px 32px;
+
+}
+}
+
+
+footer {
+  margin-top: 2rem;
+  background: var(--dark);
+  color: var(--light);
+  text-align: center;
+  padding: 1rem;
+}
+
+
